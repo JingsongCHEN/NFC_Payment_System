@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobipay"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Reg"
+            android:label="@string/title_activity_reg" >
+        </activity>
+        <activity
+            android:name=".BillInfo"
+            android:label="@string/title_activity_bill_info" >
+        </activity>
+        <activity
+            android:name=".Payone"
+            android:label="@string/title_activity_payone" >
+        </activity>
+        <activity
+            android:name=".Paytwo"
+            android:label="@string/title_activity_paytwo" >
+        </activity>
+        <activity
+            android:name=".Operate"
+            android:label="@string/title_activity_operate" >
+        </activity>
+        <activity
+            android:name=".NFC_receive"
+            android:label="@string/title_activity_nfc_receive" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme=""
+                    android:host=""
+                    android:pathPrefix=""/>   
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NFC_send"
+            android:label="@string/title_activity_nfc_send" >
+        </activity>
+    </application>
+    
+	<uses-permission android:name="android.permission.NFC" />  
+    <uses-feature android:name="android.hardware.nfc" android:required="true" />  
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

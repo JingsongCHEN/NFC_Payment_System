@@ -1,0 +1,77 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+ 　　<!-- 定义第一个标签页的内容 -->
+ 	<LinearLayout android:id="@+id/tab01" 
+    	android:orientation="vertical" 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent"
+    	android:gravity="center" >
+	    
+	    <TextView
+       		android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+       		android:id="@+id/mode" 
+       		android:layout_margin="25dp"/>
+	    
+		<Button android:id="@+id/button1" 
+     		android:layout_width="200dp"
+        	android:layout_height="90dp" 
+        	android:text="支付"
+        	android:textSize="30dp"
+        	android:layout_margin="25dp">
+     	</Button>
+        	
+    	<Button android:id="@+id/button2" 
+			android:layout_width="200dp"
+        	android:layout_height="90dp" 
+        	android:text="更改模式"
+        	android:textSize="30dp"
+        	android:layout_margin="25dp">
+      	</Button>
+    </LinearLayout>
+	    　　
+	<LinearLayout 
+		android:id="@+id/tab02" 
+ 		android:orientation="vertical" 
+ 		android:layout_width="fill_parent" 
+ 		android:layout_height="fill_parent"
+ 		android:gravity="center" >
+ 　　　　　　 
+	    <LinearLayout android:id="@+id/linearLayout1" 
+			android:layout_width="match_parent" 
+        	android:layout_height="wrap_content"
+        	android:layout_margin="10dp"
+        	android:gravity="center" >
+			<TextView
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id="@+id/userdata" 
+        		android:layout_marginRight="20dp"/>
+			
+			<Button android:id="@+id/button3" 
+				android:layout_width="wrap_content"
+        		android:layout_height="wrap_content" 
+        		android:text="注销"
+        		android:layout_marginLeft="20dp">
+      		</Button>
+		</LinearLayout>
+
+ 			
+ 			<TextView
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id="@+id/userdata1" 
+        		android:layout_margin="10dp"/>
+ 			
+ 			
+      		
+ 			<ListView  
+				android:id="@+id/BillList"  
+				android:layout_width="fill_parent"  
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"/> 
+ 　　　 　 
+ 	</LinearLayout>
+ 　　
+ </TabHost>

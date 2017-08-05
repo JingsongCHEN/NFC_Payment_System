@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"  
+    android:orientation="vertical"
+    android:gravity="center" 
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <LinearLayout android:id="@+id/linearLayout5" 
+		android:layout_width="match_parent" 
+        android:layout_height="wrap_content">
+	    <TextView android:layout_width="wrap_content" 
+	            android:id="@+id/textView1" 
+	            android:layout_height="wrap_content" 
+	            android:text="商家ID：">	        
+	    </TextView>
+	    <EditText android:layout_width="wrap_content" 
+	        android:layout_weight="1" 
+	        android:layout_height="wrap_content" 
+	        android:inputType="text" 
+	        android:id="@+id/merchantID">
+	    </EditText>
+	</LinearLayout>
+	
+    <LinearLayout android:id="@+id/linearLayout6" 
+		android:layout_width="match_parent" 
+        android:layout_height="wrap_content">
+	    <TextView android:layout_width="wrap_content" 
+	            android:id="@+id/textView2" 
+	            android:layout_height="wrap_content" 
+	            android:text="账单详情：">
+	    </TextView>
+	    <EditText android:layout_width="wrap_content" 
+	        android:layout_weight="1" 
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/Detail">
+	    </EditText>
+	</LinearLayout>
+	
+    <LinearLayout android:id="@+id/linearLayout7" 
+		android:layout_width="match_parent" 
+        android:layout_height="wrap_content">
+	    <TextView android:layout_width="wrap_content" 
+	            android:id="@+id/textView3" 
+	            android:layout_height="wrap_content" 
+	            android:text="金额：">
+	    </TextView>
+	    <EditText android:layout_width="wrap_content" 
+	        android:layout_weight="1" 
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/amount">
+	    </EditText>
+	</LinearLayout>
+	
+	    <LinearLayout android:id="@+id/linearLayout3" 
+		android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+		 <Button android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/send" 
+	        android:text="发送">		     
+		 </Button>		 
+	    <Button android:layout_height="wrap_content" 
+	        android:layout_width="wrap_content"
+	        android:id="@+id/receive" 
+	        android:text="接收" >	        
+	    </Button>
+	</LinearLayout>
+	
+</LinearLayout>

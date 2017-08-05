@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"  
+    android:orientation="vertical"
+    android:gravity="center" 
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="微移动支付平台"
+        android:textSize="35px"
+        android:gravity="center" 
+        android:layout_margin="10dp"/>
+        
+    <LinearLayout android:id="@+id/linearLayout1" 
+		android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+	    <TextView android:layout_width="wrap_content" 
+	            android:id="@+id/textView1" 
+	            android:layout_height="wrap_content" 
+	            android:text="用户名：">	        
+	    </TextView>
+	    <EditText android:layout_width="wrap_content" 
+	        android:layout_weight="1" 
+	        android:layout_height="wrap_content" 
+	        android:inputType="text" android:id="@+id/uname">
+	    </EditText>
+	</LinearLayout>
+	
+    <LinearLayout android:id="@+id/linearLayout2" 
+		android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+	    <TextView android:layout_width="wrap_content" 
+	            android:id="@+id/textView2" 
+	            android:layout_height="wrap_content" 
+	            android:text="密码：">
+	    </TextView>
+	    <EditText android:layout_width="wrap_content" 
+	        android:layout_weight="1" 
+	        android:layout_height="wrap_content" 
+	        android:inputType="textPassword" 
+	        android:id="@+id/pword">
+	    </EditText>
+	</LinearLayout>
+	    <LinearLayout android:id="@+id/linearLayout3" 
+		android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:gravity="center" 
+        android:layout_margin="10dp">
+		 <Button android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/login" 
+	        android:text="登录"
+	        android:layout_margin="10dp">		     
+		 </Button>		 
+	    <Button android:layout_height="wrap_content" 
+	        android:layout_width="wrap_content"
+	        android:id="@+id/register" 
+	        android:text="注册" 
+	        android:layout_margin="10dp">	        
+	    </Button>
+	</LinearLayout>
+
+</LinearLayout>
