@@ -1,8 +1,0 @@
-[model]
-unit_size=10
-unit_myself_size=1
-feature_size=17
-hidden1_units=100
-hidden2_units=100
-hidden3_units=100
-hidden4_units=100
